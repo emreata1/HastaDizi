@@ -23,12 +23,12 @@ public class Main {
                     ad = scan.nextLine();
 
                     if (ad.equalsIgnoreCase("X")) {
-                        continue;
+                        break;
                     }
 
                     hasta[i] = ad;
                     i++;
-                } while (!ad.equalsIgnoreCase("X"));
+                } while (true);
             }
 
             if (seçim == 2) {
