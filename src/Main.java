@@ -30,14 +30,23 @@ public class Main {
                     i++;
                 } while (true);
             }
-
+            
             if (seçim == 2) {
-                System.out.println("Hastaların listesi:");
+                int j=1;
+                for(String kişi:hasta){
+                    if(kişi!=null){
+                    System.out.println(j+"."+kişi);
+                    j++;
+                }}
+            }
+            
+          /*  if (seçim == 2) {                                            //Alternatif Yazdırma bloğu
+                System.out.println("Hastaların listesi:");   
                 for (int j = 0; j < i; j++) {
                     System.out.println(j + 1 + ". " + hasta[j]);
                 }
             }
-
+*/
         } while (seçim != 3);
     }
 }
